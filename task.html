@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <h2>
+                Movies
+            </h2>
+        </div>
+        <div class="stats">
+            <div class="stats-container">
+                <h3>
+                    Stats
+                </h3>
+                <p>
+                    Current page: <span id="current_page">0</span>
+                </p>
+                <p>
+                    Number of Movies: <span id="movies_number">0</span>
+                </p>
+                <p>
+                    Top rated movie: <span id="top_rated">N/A</span>
+                </p>
+                <p>
+                    Rating: <span id="rating">0</span>
+                </p>
+            </div>
+        </div>
+        <div id="movies-container" class="movies-container">
+
+        </div>
+
+        <div class="pagination">
+            <button id="previous" class="btn btn-outline-secondary">Previous</button>
+            <button id="next" class="btn btn-outline-secondary">Next</button>
+        </div>
+
+        <div id="myModal" class="container-fluid modal px-container">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="row">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <img id="modal-image" src="./img/thor.jpg" class="image card_divs" alt="">
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column">
+                        <p id="modal-title" class="h3 main_color">Places</p>
+                        <p id="modal-description" class="p">
+                        </p>
+                    </div>
+              </div>
+            </div>
+          
+        </div>
+    </div>
+    <script src="./js/script.js" type="module"></script>.
+</body>
+</html>
